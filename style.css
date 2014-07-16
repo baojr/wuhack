@@ -1,0 +1,87 @@
+* {
+  font-family: 'Ubuntu Mono', sans-serif;
+}
+
+html {
+  height: 100%;
+  background: red;
+}
+
+body {
+  height: 100%;
+  background-color: white;
+  background-image: url(http://news.wustl.edu/news/PublishingImages/brauer%20front_geoff%20story-hires.jpg);
+  font-size: 1.5em;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+#main, #footer {
+  position: absolute;
+  width: 100%;
+}
+
+#main {
+  top: 0;
+  background-color: rgba(238, 238, 238, 0.5);
+  height: 75%;
+  overflow: auto;
+}
+
+#footer {
+  top: 75%;
+  background-color: rgba(170, 170, 170, 0.5);
+  height: 25%;
+  overflow: hidden;
+}
+
+#nav {
+  list-style-type: none;
+}
+
+#nav li {
+  margin: 0.3em;
+  padding: 0.3em;
+}
+
+li {
+  display: inline;
+}
+
+li a {
+  text-decoration: none;
+  color: #000;
+}
+
+li a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+#title a {
+  color: #222;
+  font-size: 250%;
+}
+
+#title a:hover {
+  color: #eee;
+  font-size: 250%;
+}
+
+.special {
+  background-color: #ddd;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.container {
+  padding: 0 0.5em 0.5em;
+}
+
+#default-content, #about-content, #sponsors-content {
+  display: none;
+}
