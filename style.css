@@ -9,9 +9,13 @@ html {
 
 body {
   height: 100%;
-  background-color: white;
-  background-image: url(http://news.wustl.edu/news/PublishingImages/brauer%20front_geoff%20story-hires.jpg);
+  background: url(arch.jpg) no-repeat center center fixed #040833; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   font-size: 1.5em;
+  color: #ddf;
 }
 
 html, body {
@@ -26,14 +30,14 @@ html, body {
 
 #main {
   top: 0;
-  background-color: rgba(238, 238, 238, 0.5);
+  background-color: rgba(238, 238, 238, 0.2);
   height: 75%;
   overflow: auto;
 }
 
 #footer {
   top: 75%;
-  background-color: rgba(170, 170, 170, 0.5);
+  background-color: rgba(170, 170, 170, 0.2);
   height: 25%;
   overflow: hidden;
 }
@@ -53,7 +57,7 @@ li {
 
 li a {
   text-decoration: none;
-  color: #000;
+  color: #ddf;
 }
 
 li a:hover {
@@ -62,17 +66,17 @@ li a:hover {
 }
 
 #title a {
-  color: #222;
+  color: #bbe;
   font-size: 250%;
 }
 
 #title a:hover {
-  color: #eee;
+  color: #fff;
   font-size: 250%;
 }
 
 .special {
-  background-color: #ddd;
+  background-color: #113;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
