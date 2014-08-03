@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
   <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700' rel='stylesheet' type='text/css'>
@@ -17,24 +17,143 @@
     
     <div id="default-content">
       <div class="container">
-        <p>
-          &gt;Welcome to WUHack...
-        </p>
+        <h1 style="text-align:left">
+          &gt;Welcome to WUHack
+        </h1>
         <p class="terminal">
-
+          
         </p>
       </div>
     </div>
     
     <div id="about-content">
-      <div class="container">
-      About
+      <div class="container modal">
+        <h1>About</h1>
+        <p>
+          WUHack 2014 is a hackathon meant for college students interested in technology hosted by Wash U's <a href="http://upe.wustl.edu/">Upsilon Pi Epsilon chapter</a>.
+          UPE is the International Honor Society for the Computing and Information Disciplines.
+          It will be hosted in St. Louis, Missouri, though students from anywhere are welcome!
+        </p>
+        <p>
+          Date: Sept 12th-14th<br>
+          Size: 100-150 participants<br>
+          Location: Washington University in St. Louis: Lopata Gallery
+        </p>
+        <p>
+          Email <a href="mailto:upe@cse.wustl.edu">upe@cse.wustl.edu</a> if you have any questions!
       </div>
     </div>
     
     <div id="sponsors-content">
       <div class="container">
-      Sponsors
+        <h1>Sponsors</h1>
+        <div id="sponsor-images">
+          <img src="images/google-logo.png" width="400">
+          <img src="images/microsoft-logo.jpg" width="400">
+        </div>
+        <p style="text-align: center">
+          More coming soon!
+        </p>
+      </div>
+    </div>
+    
+    <div id="faq-content">
+      <div class="container">
+        <h1>FAQ</h1>
+        
+        <dl>
+        <dt>What is WuHack?</dt>
+
+        <dd>
+          WuHack is a weekend college student hackathon, the first of its type at Wash U.
+          A hackathon is an event where technologists collaborate in teams to build/"hack" a project in a short span of time.
+        </dd>
+
+        <dt>Who can attend?</dt>
+
+        <dd>
+          Students of any type.
+          As long as you are a student, you can participate for some prizes.
+        </dd>
+
+        <dt>What types of hacks can teams make?</dt>
+
+        <dd>
+          In short, pretty much anything! We're excited to see anything that you can come up with.
+          HOWEVER, let's keep things safe, inoffensive, and legal.
+          Besides that hack on!
+        </dd>
+
+        <dt>What should I bring?</dt>
+
+        <dd>
+          Your laptop, charger, and a hacker mindset.
+          Bring a student ID for checking in as well.
+          Hackers planning to stay on site overnight should bring toiletries and sleeping bags.
+        </dd>
+
+        <dt>What are the team sizes?</dt>
+
+        <dd>
+          Teams are made up of 2 to 5 students.
+          It is not necessary to have a team before WuHack (in fact we encourage you to be open to meeting new people).
+          We can help you put together a team!
+        </dd>
+
+        <dt>Will food be provided?</dt>
+
+        <dd>
+          Yup! We'll have food and drinks on hand for the entire event.
+          Do not worry about going hungry.
+          We'll have you covered.
+        </dd>
+
+        <dt>What skills do I need to attend?</dt>
+
+        <dd>
+          No skill but the ability to have a good attitude.
+          Everyone is welcome regardless of skills.
+          We will have mentors on board from a variety of companies to help develop your skills.
+        </dd>
+
+        <dt>Can I start working on my hack before the official hackathon starts?</dt>
+
+        <dd>
+          No.
+          The point of a hackathon is to bring a new idea to life.
+          Bringing an already started project violates the spirit of our hackathon (and our rules).
+        </dd>
+
+        <dt>Why do you ask for my resume upon registration?</dt>
+
+        <dd>
+          We pass your resumes to the companies that sponsor the event.
+          Part of our mission is to connect ambitious and smart students with innovative and exciting companies.
+        </dd>
+        </dl>
+
+      </div>
+    </div>
+    
+    <div id="apply-content">
+      <div class="container modal">
+        <h1>Apply Now!</h1>
+          <form enctype="multipart/form-data" action="upload.php" method="post">
+            <input type="hidden" name="MAX_FILE_SIZE" value="1000000">
+            <label>Your name:
+              <input type="text" name="name">
+            </label>
+            <br>
+            <label>Your university:
+              <input type="text" name="university">
+            </label>
+            <br>
+            <label>Choose a file to upload: 
+              <input name="uploaded_file" type="file">
+            </label>
+            <br>
+            <input type="submit" value="Upload">
+          </form>
       </div>
     </div>
 
@@ -55,7 +174,7 @@
           <a href="#" id="show-faq">FAQ</a>
         </li>
         <li class="special">
-          <a href="#" id="show-apply-now">Apply Now!</a>
+          <a href="#" id="show-apply">Apply Now!</a>
         </li>
       </ul>
     </div>

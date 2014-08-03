@@ -1,20 +1,25 @@
-* {
+﻿* {
   font-family: 'Ubuntu Mono', sans-serif;
 }
 
 html {
   height: 100%;
-  background: red;
+  background: #88e;
+}
+
+.terminal {
+  font-size: 2em;
+  line-height: 1.3em;
 }
 
 body {
   height: 100%;
-  background: url(arch.jpg) no-repeat center center fixed #040833; 
+  background: url(images/arch.jpg) no-repeat center center fixed #040833; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  font-size: 1.5em;
+  font-size: 1.0em;
   color: #ddf;
 }
 
@@ -31,14 +36,14 @@ html, body {
 #main {
   top: 0;
   background-color: rgba(238, 238, 238, 0.2);
-  height: 75%;
+  height: 85%;
   overflow: auto;
 }
 
 #footer {
-  top: 75%;
+  top: 85%;
   background-color: rgba(170, 170, 170, 0.2);
-  height: 25%;
+  height: 15%;
   overflow: hidden;
 }
 
@@ -55,14 +60,17 @@ li {
   display: inline;
 }
 
-li a {
+a {
   text-decoration: none;
-  color: #ddf;
+  color: #8b8;
+  font-weight: bold;
 }
 
-li a:hover {
+a:hover {
   text-decoration: none;
   color: #fff;
+  font-weight: bold;
+
 }
 
 #title a {
@@ -86,6 +94,37 @@ li a:hover {
   padding: 0 0.5em 0.5em;
 }
 
-#default-content, #about-content, #sponsors-content {
+#default-content, #about-content, #sponsors-content, #faq-content, #apply-content {
   display: none;
 }
+
+dl dt {
+	color: #eef;
+	font-weight: bold;
+	padding: 0;
+}
+	
+dl dd {
+	margin: 0 0 1em 0;
+	padding: 0 0 0 0.5em;
+}
+
+h1 {
+  text-align: center;
+}
+
+#sponsor-images img {
+  margin: 0 auto;
+  display: block;
+}
+
+.modal {
+  border: 1px solid #eee;
+  width: 60%;
+  display: block;
+  margin: 3em auto;
+  font-size: 120%;
+  
+}
+
+
